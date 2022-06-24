@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explotar este globo</title>
+</head>
+<style>
+    #balon {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: red;
+        margin: 100px auto;
+        border-color: red;
+    }
+
+    #balon:hover {
+        padding: 10px;
+        border-radius: 50%;
+
+    }
+</style>
+
+
+<body>
+    <div id="balon">
+
+    </div>
+
+
+</body>
+<script>
+    const colores = ['#FF6633', '#FFB399', '#FF33FF', '#FFFF99'];
+    const balon = document.getElementById('balon');
+
+    const totalColores = colores.length;
+    balon.addEventListener('click', function(){
+    balon.style.backgroundColor = `${totalColores}`;
+   
+})
+    
+</script>
+
+</html>

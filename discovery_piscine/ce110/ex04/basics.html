@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Básico</title>
+    <style>
+        body {
+            background-color: rosybrown;
+        }
+
+        h1 {
+            width: 100%;
+            font-size: 10rem;
+            color: white;
+            text-align: center;
+       
+        }
+
+        h1 span {
+            font-size: 5rem;
+        }
+
+        .section-fotos {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .section-fotos .foto {
+            width: 48%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        
+        .foto img {
+            width: 100%;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .foto a {
+            display: block;
+            text-decoration: none;
+            color: white;
+        }
+
+        hr {
+            margin-top: 30px;
+        }
+
+        .site-aside {
+            display: flex;
+            flex-direction: row;
+         
+        }
+
+        .site-aside p {
+            font-family: cursive;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><span>&#174;</span> BÁSICO</h1>
+    </header>
+    <main>
+        <section class="section-fotos">
+
+            <div class="foto">
+                <img src="img/tienda-1.png" alt="tienda 1">
+                <a href="https://www.decathlon.es/es/" target="_black">DECATHON</a>
+            </div>
+
+            <div class="foto">
+                <img src="img/tienda-2.png" alt="tienda 2">
+                <a href="https://www.elcorteingles.es/" target="_black">CORTE INGLÉS</a>
+            </div>
+        </section>
+        <hr>
+        <aside class="site-aside">
+            <p> &copy; mfarro-e 2022</p>
+        </aside>
+    </main>
+
+
+</body>
+
+</html>

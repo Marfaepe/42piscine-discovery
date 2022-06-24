@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="css/background.css">
+   
+</head>
+
+<body>
+    <div class="color">
+		<div class="hex">
+			<span class="tooltiptext" id="text">Copiar Color</span>
+			<span id="hexadecimal" onclick="copiarAlPortapapeles('hexadecimal')">#E8347D</span>
+		</div>
+		<button onclick="generarNuevoColor()">Generar Color</button>
+	</div>
+
+</body>
+<script>
+    function generarNuevoColor() {
+        var simbolos, color;
+        simbolos = "0123456789ABCDEF";
+        color = "#";
+
+        for (var i = 0; i < 6; i++) {
+            color = color + simbolos[Math.floor(Math.random() * 16)];
+        }
+
+        document.body.style.background = color;
+        document.getElementById("hexadecimal").innerHTML = color;
+        document.getElementById("text").innerHTML = "Copiar Color";
+    }
+
+    function copiarAlPortapapeles(hexadecimal) {
+        var aux = document.createElement("input");
+        aux.setAttribute("value", document.getElementById(hexadecimal).innerHTML);
+        document.body.appendChild(aux);
+        aux.select();
+        document.execCommand("copy");
+        document.body.removeChild(aux);
+        document.getElementById("text").innerHTML = "Copiado!";
+    }
+
+</script>
+</html>

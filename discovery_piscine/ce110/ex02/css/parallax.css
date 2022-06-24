@@ -1,0 +1,46 @@
+
+.imagen{
+    background-image: url(../img/montana.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    background-attachment: fixed;
+    top: 0;
+    background-position: center;
+ 
+}
+.imagen p{
+    color: white;
+    text-align: center;
+    padding-top: 250px;
+    
+}
+.caja-negra{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;   
+    
+}   
+.site-footer{
+    width: 100%;
+    clear: both;
+    position: relative;
+ 
+
+}
+.site-footer p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+}
+.site-footer img{
+    display: block;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    
+}
